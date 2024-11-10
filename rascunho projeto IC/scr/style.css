@@ -1,0 +1,253 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rajdhani:wght@300;400;500;600;700&display=swap');
+
+*{
+    font-family: 'Barlow', sans-serif;
+}
+body {
+    font-family: 'Barlow', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #FFF8E1;
+}
+
+header {
+    background: #FFC107;
+    color: #333333;
+    padding: 20px 0;
+    text-align: center;
+}
+
+h1 {
+    margin: 0;
+}
+
+
+h2 {
+    border-bottom: 2px solid #795548;
+}
+
+
+
+.checkbox-container{
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+  }
+  
+  .checkbox {
+     height: 100px; 
+     width: 100px; 
+     position: absolute; 
+     right: 0; 
+     top: 0; 
+     display: flex; 
+     justify-content: center; 
+     cursor: pointer; 
+     z-index: 9999;
+     transition: 400ms ease-in-out 0s;
+  }
+  
+  .checkbox .trace{
+      width: 50px;
+      height: 2px;
+      background-color: #FFF8E1;
+      position: absolute; 
+      border-radius: 4px;
+      transition: 0.5s ease-in-out; 
+  }
+  
+  .checkbox .trace:nth-child(1){
+      top: 26px;
+      transform: rotate(0)
+  }
+  
+  .checkbox .trace:nth-child(2){
+      top: 46px;
+      transform: rotate(0)
+  }
+  
+  .checkbox .trace:nth-child(3){
+      top: 66px;
+      transform: rotate(0)
+  }
+  
+  #toggle{
+      display: none;
+  }
+  
+
+  
+  .menu {
+      position: absolute;
+      top: 28px; 
+      right: 30px; 
+      background-color: transparent;
+      height: 10px; 
+      width: 10px;
+      border-radius: 50%;
+      box-shadow: 0px 0px 0px 0px #FFF8E1; 
+      z-index: -1;
+      transition: 400ms ease-in-out 0s;  
+  }
+  
+  .menu-items{ 
+      position: fixed;
+      top: 0;
+      left: 0; 
+      width: 100%; 
+      height: 100vh; 
+      display: flex; 
+      justify-content: center; 
+      align-items: center; 
+      z-index: 2; 
+      opacity: 0; 
+      visibility: hidden;
+      transition: 400ms ease-in-out 0s; 
+  }
+  
+  .menu-items ul {
+      list-style-type: none;
+  }
+  
+  .menu-items ul li a {
+      margin: 10px 0;
+      color: #333333; 
+      text-decoration: none;
+      text-transform: uppercase; 
+      letter-spacing: 0px; 
+      font-size: 40px; 
+  }
+  
+ 
+  
+  #toggle:checked + .checkbox .trace:nth-child(1){
+      transform: rotate(45deg);
+      top: 47px;
+      background-color: #795548;
+  }
+  
+  #toggle:checked + .checkbox .trace:nth-child(2){
+      transform: translate(-100px);
+      width: 30px; 
+      visibility: hidden; 
+      opacity: 0; 
+      background-color: #795548;
+  }
+  
+  #toggle:checked + .checkbox .trace:nth-child(3){
+      transform: rotate(-45deg);
+      top: 48px;
+      background-color: #795548;
+  }
+  
+  #toggle:checked + .checkbox{
+      background-color: #FFF8E1;
+  }
+  
+  #toggle:checked ~ .menu{
+      box-shadow: 0px 0px 0px 90vmax #FFF8E1;
+      z-index: 1;
+  } 
+  
+  #toggle:checked ~ .menu-items{
+      visibility: visible;
+      opacity: 1;
+  }
+  
+  a:hover{
+    background-color:#FFC107; 
+}
+
+.autor {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.autor img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.scroll-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 15px;
+    background-color: #795548;
+    color: #FFF8E1;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: none; 
+    transition: display 0.3s;
+}
+
+.active {
+    display: block; 
+}
+
+section {
+    margin: 80px;
+    padding: 20px;
+    background: #FFC107;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    color:#333333;
+}
+
+li {
+    margin-bottom: 16px;
+}
+
+#codigo a{
+    text-decoration: none;
+    color:#333333;
+}
+
+#codigo a:hover{
+    background-color:#FFF8E1;
+}
+
+#download a{
+    color:#333333;
+    text-decoration: none;
+}
+
+#download a:hover{
+    background-color:#FFF8E1;
+    color:#795548;
+}
+
+.autor a {
+    text-decoration: none;
+    color:#333333;
+    margin: 10px;
+}
+
+.autor a:hover{
+    background-color: #FFF8E1;
+    color:#795548;
+}
+
+.autor img{
+    height: 100px;
+    width: 100px;
+}
+
+.autor p{
+    margin: 10px;
+}
+
+footer {
+    width: 100%; 
+    height: 100px; 
+    background-color: #FFC107;
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    color: #333333; 
+}
