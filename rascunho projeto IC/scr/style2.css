@@ -172,6 +172,17 @@ main {
     transition: transform o.5s;
 }
 
+.livro h2{
+    height: 70vh;
+    position: fixed;
+}
+
+.livro ol, p, ul{
+    height: 50vh;
+    position: fixed;
+    margin: 10px;
+}
+
 .pagina{
     position: absolute; 
     width: 100%;
@@ -241,8 +252,6 @@ button:hover{
     color:#13293d;
 }
 
-
-
 #pagina1 {
     z-index: 4;
 
@@ -261,5 +270,5 @@ button:hover{
 }
 
 li {
-    margin: 6px;
+    margin: 8px;
 }
