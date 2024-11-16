@@ -8,6 +8,7 @@
 
 </head>
 <body>
+   
     <header> 
         <div class="header">
             <div class="checkbox-container">
@@ -50,6 +51,21 @@
                 </div>
                 <div class="final">
                     <div id="final1" class="final-conteudo">
+                        <h2> Descrição do Projeto </h2>
+                        <p>
+                            O nosso projeto consiste na confecção de um girassol seguidor de luz. Este girassol deve realizar uma rotação em direção à posição com maior luminosidade, simulando o que acontece na natureza com os girassóis reais. 
+                            <br><br>
+                            Para confecção do girassol, utilizaremos EVA (também poderia ser confeccionado em papelão e colorido com tinta guache). Para conferir rotação, utilizaremos um servomotor. Dois sensores de luminosidade irão detectar a luminosidade em cada direção. A partir da diferença de luminosidade, o servomotor irá girar em uma direção ou outra.
+                            <br><br>
+                            Na natureza, o girassol pode rotacionar em qualquer ângulo. No nosso projeto, porém, devido ao funcionamento do servo motor e para fins de simplificação, a rotação se dará em apenas um eixo, o horizontal, limitado ao ângulo de 180º, que é a rotação máxima do servomotor. 
+                        </p>
+                        
+                    </div>
+                </div>
+            </div>
+            <div id="pagina2" class="pagina">
+                <div class="capa">
+                    <div id="capa2" class="conteudo-capa">
                         <h2> Componentes e Suprimentos </h2>
                         <ol>
                             <li>
@@ -62,21 +78,19 @@
                                 <strong> Servo Motor MG995 Tower Pro 180 (1) </strong>: Motores responsáveis por movimentar a estrutura do seguidor de luz em direção à fonte de luz. O controle desses motores é feito por meio de sinais elétricos enviados pelo Arduino.
                             </li>
                             <li>
-                                <strong>Placa de prototipagem e fios - Jumpers</strong>: Para realizar as conexões entre os componentes de maneira prática.
+                                <strong> Jumpers</strong>: Para realizar as conexões entre os componentes de maneira prática.
                             </li>
                             <li>
                                 <strong>Fonte de alimentação 9V 1A (1) </strong>
                             </li>
                             <li>
-                                <strong> Resistores 330R </strong>
+                                <strong> Resistores 330R (2) </strong>
                             </li>
                         </ol>
                     </div>
                 </div>
-            </div>
-            <div id="pagina2" class="pagina">
-                <div class="capa">
-                    <div id="capa2" class="conteudo-capa">
+                <div class="final">
+                    <div id="final2" class="final-conteudo">
                         <h2> Aplicativos e Plataformas </h2>
                         <ol>
                             <li>
@@ -91,35 +105,26 @@
                         </ol>
                     </div>
                 </div>
-                <div class="final">
-                    <div id="final2" class="final-conteudo">
-                        <h2> Passo a Passo </h2>
-                        <p> 
-                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Exercitationem corporis, sapiente, cupiditate, rerum qui voluptate officia culpa quod cum sunt voluptatum dignissimos. Est nisi vero nesciunt, facilis illo cumque architecto. 
-                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestias iusto tenetur veritatis, numquam delectus dolor nemo eaque pariatur eius. Distinctio pariatur rem placeat quam voluptas doloribus dicta, recusandae molestias inventore?
-
-                        </p>
-                    </div>
-                </div>
             </div>
             <div id="pagina3" class="pagina">
                 <div class="capa">
                     <div id="capa3" class="conteudo-capa">
-                        <h2> Passo a Passo </h2>
+                        <h2> Passo a Passo: Montagem dos LDRS </h2>
                         <p> 
-                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Exercitationem corporis, sapiente, cupiditate, rerum qui voluptate officia culpa quod cum sunt voluptatum dignissimos. Est nisi vero nesciunt, facilis illo cumque architecto. 
-                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestias iusto tenetur veritatis, numquam delectus dolor nemo eaque pariatur eius. Distinctio pariatur rem placeat quam voluptas doloribus dicta, recusandae molestias inventore?
-
+                            <strong>O que é:</strong> O LDR (Light Dependent Resistor) é um componente eletrônico que pode ser utilizado para detecção de luminosidade. Como seu nome diz, é um resistor dependente de luz. Isto é, sua resistência elétrica é alterada a depender da luminosidade que incide sobre sua superfície.
+                            <br><br>
+                            <strong>Funcionamento:</strong> Geralmente, o LDR é utilizado em associação com outro resistor, desta vez com resistência elétrica constante, para que funcione como um divisor de tensão dinâmico. Ou seja, a medida que a luminosidade altera a resistência do LDR, altera também a tensão que é enviada para o pino analógico do Arduíno.
+                            <br><br>
                         </p>
                     </div>
                 </div>
                 <div class="final">
                     <div id="final3" class="final-conteudo">
-                        <h2> Passo a Passo </h2>
+                        <h2> Passo a Passo: Montagem do Servomotor </h2>
                         <p> 
-                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Exercitationem corporis, sapiente, cupiditate, rerum qui voluptate officia culpa quod cum sunt voluptatum dignissimos. Est nisi vero nesciunt, facilis illo cumque architecto. 
-                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestias iusto tenetur veritatis, numquam delectus dolor nemo eaque pariatur eius. Distinctio pariatur rem placeat quam voluptas doloribus dicta, recusandae molestias inventore?
-
+                            <strong>O que é:</strong> O servomotor é um dispositivo composto por uma combinação de quatro componentes: um motor de corrente contínua, engrenagens, circuitos de controle e um potenciômetro. Por meio desses componentes, e fazendo uso da modulação por largura de pulso (PWM, sigla em inglês), é possível obter um controle fino do movimento desses motores.
+                            <br><br>
+                            <strong>Funcionamento:</strong> Para a ligação e montagem do servo motor, basta alimentarmos um de seus terminais com o 5V do Arduíno, outro terminal no GND e um outro em uma saída digital do Arduíno que possua a funcionalidade de PWM, o que é essencial para o funcionamento do servomotor.
                         </p>
                     </div>
                 </div>
@@ -127,29 +132,57 @@
             <div id="pagina4" class="pagina">
                 <div class="capa">
                     <div id="capa4" class="conteudo-capa">
-                        <h2>Problemas enfrentados e lições</h2>
-                        <p> 
-                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Exercitationem corporis, sapiente, cupiditate, rerum qui voluptate officia culpa quod cum sunt voluptatum dignissimos. Est nisi vero nesciunt, facilis illo cumque architecto. 
-                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestias iusto tenetur veritatis, numquam delectus dolor nemo eaque pariatur eius. Distinctio pariatur rem placeat quam voluptas doloribus dicta, recusandae molestias inventore?
-                        </p>
+                        <h2>Passo a Passo: Photoboard </h2>
+                        <ol>
+                            <li>
+                                Alimentamos as duas linhas verticais da protoboard com 5V e GND, o que nos possibilita ter acesso fácil à alimentação. 
+                            </li>
+                            <li>
+                                Utilizamos, então, estas linhas verticais para alimentar o servomotor e também os dois LDRs associados aos seus respectivos resistores de 330 Ohms. 
+                            </li>
+                            <li>
+                                Utilizamos o pino 9 do Arduíno para controlar o servomotor. 
+                            </li>
+                            <li>
+                                Utilizamos os pinos analógicos A0 e A1 para receberem o sinal de tensão proveniente do LDR e resistor. 
+                            </li>    
+                        </ol>
                     </div>
                 </div>
                 <div class="final">
                     <div id="final4" class="final-conteudo">
-                        <h1> Girassol Seguidor de Luz </h1>
-                        <h3> manual interativo </h3>
+                        <h2> Passo a Passo: Código</h2>
+                        <p>  
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Exercitationem corporis, sapiente, cupiditate, rerum qui voluptate officia culpa quod cum sunt voluptatum dignissimos. Est nisi vero nesciunt, facilis illo cumque architecto. 
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestias iusto tenetur veritatis, numquam delectus dolor nemo eaque pariatur eius. Distinctio pariatur rem placeat quam voluptas doloribus dicta, recusandae molestias inventore?
+                        </p> 
+                    </div>
+                </div>
+            </div>
+            <div id="pagina5" class="pagina">
+                <div class="capa">
+                    <div id="capa5" class="conteudo-capa">
+                        <h2>  Problemas enfrentados e lições </h2>
+                        <p>  
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Exercitationem corporis, sapiente, cupiditate, rerum qui voluptate officia culpa quod cum sunt voluptatum dignissimos. Est nisi vero nesciunt, facilis illo cumque architecto. 
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestias iusto tenetur veritatis, numquam delectus dolor nemo eaque pariatur eius. Distinctio pariatur rem placeat quam voluptas doloribus dicta, recusandae molestias inventore?
+
+                        </p> 
+                    </div>
+                </div>
+                <div class="final">
+                    <div id="final5" class="final-conteudo">
+                        <h1> Girassol Seguidor de Luz </h1> 
+                        <h3>manual interativo</h3>
                     </div>
                 </div>
             </div>
         </div>
-
         <button id="ultimo-botao">
             &#9654;
         </button>
     </main>
 
-  
-
-<script src="../scr/manual.js"></script>
+    <script src="../scr/manual.js"></script>
 </body>
 </html>

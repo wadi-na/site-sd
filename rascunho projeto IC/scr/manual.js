@@ -11,7 +11,7 @@ botao1.addEventListener("click", voltarPagina);
 botao2.addEventListener("click", proximaPagina);
 
 let posicaoAtual = 1;
-let numeroDePaginas = 4; 
+let numeroDePaginas = 5; 
 let posicaoMaxima = numeroDePaginas + 1;
 
 
@@ -51,6 +51,10 @@ function proximaPagina(){
             case 4: 
                 pagina4.classList.add("virada");
                 pagina4.style.zIndex=4;
+                break;
+            case 5:
+                pagina5.classList.add("virada");
+                pagina5.style.zIndex=5;
                 fecharLivro();
                 break;
             default:
@@ -67,20 +71,24 @@ function voltarPagina(){
             case 2: 
                 fecharLivro(true);
                 pagina1.classList.remove("virada");
-                pagina1.style.zIndex = 4;
+                pagina1.style.zIndex = 5;
                 break;
             case 3:
                 pagina2.classList.remove("virada");
-                pagina2.style.zIndex=3;
+                pagina2.style.zIndex=4;
                 break;
             case 4: 
                 pagina3.classList.remove("virada");
-                pagina3.style.zIndex=2;
+                pagina3.style.zIndex=3;
                 break;
             case 5:
-                abrirLivro();
                 pagina4.classList.remove("virada");
-                pagina4.style.zIndex=1;
+                pagina4.style.zIndex=2;
+                break;
+            case 6: 
+                abrirLivro();
+                pagina5.classList.remove("virada");
+                pagina5.style.zIndex=1;
                 break;
             default:
                 throw new Error("erro");
