@@ -71,24 +71,24 @@ function voltarPagina(){
             case 2: 
                 fecharLivro(true);
                 pagina1.classList.remove("virada");
-                pagina1.style.zIndex = 5;
+                pagina1.style.zIndex = 6;
                 break;
             case 3:
                 pagina2.classList.remove("virada");
-                pagina2.style.zIndex=4;
+                pagina2.style.zIndex=5;
                 break;
             case 4: 
                 pagina3.classList.remove("virada");
-                pagina3.style.zIndex=3;
+                pagina3.style.zIndex=4;
                 break;
             case 5:
                 pagina4.classList.remove("virada");
-                pagina4.style.zIndex=2;
+                pagina4.style.zIndex=3;
                 break;
             case 6: 
                 abrirLivro();
                 pagina5.classList.remove("virada");
-                pagina5.style.zIndex=1;
+                pagina5.style.zIndex=2;
                 break;
             default:
                 throw new Error("erro");
@@ -97,3 +97,24 @@ function voltarPagina(){
     }
 
 }
+
+const imagens = document.querySelectorAll('.imagem-hover');
+
+function aumentarImagem(event){
+
+    console.dir(event.target);
+    event.target.style.transform = 'scale(1.8)';
+    event.target.style.transition = 'transform 0.3s ease';
+} 
+
+function diminuirImagem(event){
+
+    console.dir(event.target);
+    event.target.style.transform = 'scale(1)'
+}
+
+imagens.forEach(imagem => {
+
+    imagem.addEventListener('mouseenter',aumentarImagem);
+    imagem.addEventListener('mouseleave', diminuirImagem);
+});

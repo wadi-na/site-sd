@@ -272,6 +272,19 @@ button:hover{
     z-index: 1
 }
 
+.imagem-container {
+    position:fixed;
+    padding: 12%;
+    overflow: hidden;
+    margin-top: 300px;
+    margin-left: 144px;
+    width: 30vw;
+}
+
+.expandir{
+   margin-top: 440px;
+}
+
 li {
     margin: 8px;
 }
