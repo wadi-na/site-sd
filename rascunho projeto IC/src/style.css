@@ -210,6 +210,7 @@ li {
 
 #codigo a:hover{
     background-color:#FFF8E1;
+    color:#795548;
 }
 
 #download a{
@@ -220,6 +221,11 @@ li {
 #download a:hover{
     background-color:#FFF8E1;
     color:#795548;
+}
+
+#download button:hover{
+    background-color: #FFC107;
+    color:#FFF8E1;
 }
 
 .autor a {

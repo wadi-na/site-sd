@@ -6,6 +6,7 @@ let pagina1 = document.getElementById("pagina1");
 let pagina2 = document.getElementById("pagina2");
 let pagina3 = document.getElementById("pagina3"); 
 let pagina4 = document.getElementById("pagina4"); 
+let pagina5 = document.getElementById("pagina5");
 
 botao1.addEventListener("click", voltarPagina);
 botao2.addEventListener("click", proximaPagina);
@@ -103,7 +104,7 @@ const imagens = document.querySelectorAll('.imagem-hover');
 function aumentarImagem(event){
 
     console.dir(event.target);
-    event.target.style.transform = 'scale(1.8)';
+    event.target.style.transform = 'scale(1.5)';
     event.target.style.transition = 'transform 0.3s ease';
 } 
 

@@ -285,6 +285,53 @@ button:hover{
    margin-top: 440px;
 }
 
+.container-img-codigo #parte1{
+    position: fixed;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    overflow: hidden;
+    width: 18vw;
+}
+
+.container-img-codigo #parte2{
+    position: relative;
+    margin-top: 34px;
+    margin-bottom: 10px;
+    overflow: hidden;
+    width: 18vw;
+}
+
+.container-img-codigo #parte3{
+    position: relative;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    overflow: hidden;
+    width: 18vw;
+}
+
+.container-img-codigo #parte4{
+    position: relative;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    overflow: hidden;
+    width: 18vw;
+}
+
+.container-img-codigo #parte5{
+    position: relative;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    overflow: hidden;
+    width: 18vw;
+}
+
+
+.expandir-codigo{
+    position: fixed;
+    margin-top: 450px;
+    z-index: -1;
+}
+
 li {
     margin: 8px;
 }
