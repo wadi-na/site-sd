@@ -213,19 +213,15 @@ li {
     color:#795548;
 }
 
-#download a{
+#download button{
+    background-color: #FFF8E1;
     color:#333333;
-    text-decoration: none;
-}
-
-#download a:hover{
-    background-color:#FFF8E1;
-    color:#795548;
+    border-radius: 50px;
 }
 
 #download button:hover{
-    background-color: #FFC107;
-    color:#FFF8E1;
+    background-color: #795548;
+    color:#FFC107;
 }
 
 .autor a {
